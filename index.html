@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: lightpink;
+      font-family: Arial, sans-serif;
+    }
+
+    #invitation {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #rsvp {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: lightgreen;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: darkgreen;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="invitation">
+    <h1>You're Invited!</h1>
+    <p>We are happy to announce that we are getting married! We would be honored if you could join us.</p>
+    <p>Date: <em>December 20, 2023</em></p>
+    <p>Location: <em>Beverly Hills, California</em></p>
+  </div>
+  <div id="rsvp">
+    <p>Please let us know if you'll be joining us:</p>
+    <button id="yesBtn">Yes, I'll be there!</button>
+    <button id="noBtn">Sorry, I can't make it.</button>
+  </div>
+  <div id="response" style="text-align:center; margin-top:50px;"></div>
+
+  <script>
+    document.getElementById('yesBtn').onclick = function(){
+        document.getElementById('response').innerHTML = "Thank you! We're excited to celebrate with you!";
+    }
+    document.getElementById('noBtn').onclick = function(){
+        document.getElementById('response').innerHTML = "We're sorry to hear that. We'll miss you!";
+    }
+  </script>
+
+</body>
+</html>
