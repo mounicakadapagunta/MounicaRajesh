@@ -1,59 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      background-color: lightpink;
-      font-family: Arial, sans-serif;
-    }
-
-    #invitation {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    #rsvp {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    button {
-      background-color: lightgreen;
-      border: none;
-      padding: 15px;
-      margin-top: 20px;
-      font-size: 15px;
-    }
-
-    button:hover {
-      cursor: pointer;
-      background-color: darkgreen;
-      color: white;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="invitation">
-    <h1>You're Invited!</h1>
-    <p>We are happy to announce that we are getting married! We would be honored if you could join us.</p>
-    <p>Date: <em>December 20, 2023</em></p>
-    <p>Location: <em>Beverly Hills, California</em></p>
-  </div>
-  <div id="rsvp">
-    <p>Please let us know if you'll be joining us:</p>
-    <button id="yesBtn">Yes, I'll be there!</button>
-    <button id="noBtn">Sorry, I can't make it.</button>
-  </div>
-  <div id="response" style="text-align:center; margin-top:50px;"></div>
+  <nav class="top-bar">
+    <div class="container">
+      <div class="logo">Wedding</div>
+      <ul class="nav-links">
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#wedding">Wedding</a></li>
+        <li><a href="#card">Card</a></li>
+        <li><a href="#story">Our Story</a></li>
+      </ul>
+      <div class="profile">
+        <img src="profile-pic.jpg" alt="Profile Picture">
+      </div>
+    </div>
+  </nav>
 
-  <script>
-    document.getElementById('yesBtn').onclick = function(){
-        document.getElementById('response').innerHTML = "Thank you! We're excited to celebrate with you!";
-    }
-    document.getElementById('noBtn').onclick = function(){
-        document.getElementById('response').innerHTML = "We're sorry to hear that. We'll miss you!";
-    }
-  </script>
+  <div id="photos" class="section">
+    <h2>Photos</h2>
+    <!-- Photo Gallery Goes Here -->
+  </div>
 
+  <div id="venue" class="section">
+    <h2>Venue</h2>
+    <!-- Venue Information Goes Here -->
+  </div>
+
+  <div id="wedding" class="section">
+    <h2>Wedding</h2>
+    <!-- Wedding Details Goes Here -->
+  </div>
+
+  <div id="card" class="section">
+    <h2>Card</h2>
+    <!-- Card Information Goes Here -->
+  </div>
+
+  <div id="story" class="section">
+    <h2>Our Story</h2>
+    <!-- Our Story Goes Here -->
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
